@@ -13,15 +13,15 @@ int main(){
 	
 	while (1){
 		cout << " Enter number of operation:\n";
-		cout << " 1.Enter vector.\n" " 2.Show vector №1.\n" " 3.Delet element of vector.\n";
-		cout << " 4.Exit. \n" " 5.Delet Vector.\n" " 6.Add to vector1-n + vector2.\n" " 7.Show vector №1 and №2. \n";
+		cout << " 1.Enter vector.\n" " 2.Show vector number 1.\n" " 3.Delet element of vector.\n";
+		cout << " 4.Exit. \n" " 5.Delet Vector.\n" " 6.Add to vector 1-n + vector 2.\n" " 7.Show vector number 1 and number 2. \n";
 
 		int in;
 		string input;
 		cin >> in;
 		switch (in)
 		{
-		case(1) ://ввод символов в вектор
+		case(1) ://Add to Vector1
 		{
 			cout << " Enter number:   *(for exit whrite> exit )\n";
 			while (cin >> input) {
@@ -31,7 +31,7 @@ int main(){
 			}}
 
 				 break;
-		case(2) ://вывод на экран 1 вектора
+		case(2) ://Show Vector1
 		{
 			cout << " Vector number:   \n";
 			for (vector<string>::const_iterator iter = v.begin(); iter != v.end(); ++iter) {
@@ -39,7 +39,7 @@ int main(){
 																							}
 		}
 				 break;
-		case(3) ://удаление элемента
+		case(3) ://Delete element
 		{
 
 			string m;
@@ -53,12 +53,12 @@ int main(){
 							}
 		}
 				 break;
-		case(4) ://Выход
+		case(4) ://Exit
 		{ v.clear();
 			return 0;
 		}
 				 break;
-		case(5) ://очистка контейнера вектора
+		case(5) ://Clear Vector 1
 		{
 			v.clear();
 		}
@@ -82,7 +82,7 @@ int main(){
 			
 		}
 				   break;
-		case(7)://вывод на экран 1 вектора
+		case(7)://Show Vector1 and Vector2 
 		{
 			cout << " Vector 1 number:   \n";
 			for (vector<string>::const_iterator iter = v.begin(); iter != v.end(); ++iter) {
